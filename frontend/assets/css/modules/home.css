@@ -1,0 +1,129 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - 70px);
+    background: #222;
+}
+
+.titulo-home {
+    font-size: 30px;
+    font-family: Consolas;
+    color: rgb(199, 196, 226);
+}
+
+.titulo-home span {
+    color: rgb(155, 149, 201);
+}
+
+.apresentacao {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao p {
+    font-family: Consolas;
+    font-size: 25px;
+    color: rgb(199, 196, 226);
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background: #222;
+}
+
+.projetos h2 {
+    font-size: 45px;
+    font-family: Consolas;
+    color: rgb(199, 196, 226);
+    margin-bottom: 70px;
+}
+
+.projetos h2 span {
+    color: rgb(155, 149, 201);
+}
+
+.carrossel-projetos {
+    max-width: 400px;
+    height: 600px;
+    display: flex;
+    overflow-x: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.projeto-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px 0;
+
+    max-width: 400px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    padding: 20px;
+    border: 1px solid rgb(155, 149, 201);
+    font-family: Consolas;
+    color: rgb(199, 196, 226);
+}
+
+.projeto-card img {
+    padding: 0 20px;
+    width: 400px;
+}
+
+.projeto-card h3 {
+    font-size: 35px;
+}
+
+.projeto-card p {
+    font-size: 20px;
+}
+
+.projeto-card button {
+    color: #fff;
+    font-family: Consolas;
+    font-size: 30px;
+    padding: 10px 30px;
+    background: rgb(155, 149, 201);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .apresentacao {
+        max-width: 100%;
+        margin: 0 30px;
+    }
+
+    .titulo-home {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .apresentacao img {
+        width: 100%;
+    }
+
+    .projetos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .projetos h2 {
+        margin: 100px 20px;
+    }
+}

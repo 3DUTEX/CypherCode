@@ -1,0 +1,6 @@
+<!-- PRINCIPAIS COMANDOS EJS -->
+    <% Controle de fluxo (if, for...) %>
+    <%= Imprime escapando caracteres(<span>$%3@#<h1>) %>
+    <%- Imprime sem escapar caracteres(html funciona) %>
+    <%# Comentário %>
+    <%- include("CAMINHO/ARQUIVO") %>
