@@ -1,0 +1,36 @@
+<%- include("./includes/head") %>
+
+    <%- include("./includes/navbar") %>
+
+        <section class="section cadastrar">
+            <% if(erros.length> 0) { %>
+                <%- include("./includes/messages") %>
+                    <% } %>
+                        <form action="/login/cadastrar" method="POST" class="form-cadastrar">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            <div class="form-group">
+                                <label>Usuário: </label>
+                                <input type="text" name="usuario" class="input-default"
+                                    placeholder="Digite seu usuário" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email: </label>
+                                <input type="email" name="email" class="input-default" placeholder="Digite seu email" />
+                            </div>
+                            <div class="form-group">
+                                <label>Senha: </label>
+                                <input type="password" name="senha" class="input-default"
+                                    placeholder="Digite sua senha" />
+                            </div>
+                            <div class="form-group">
+                                <label>Confirmar Senha: </label>
+                                <input type="password" name="confirmarSenha" class="input-default"
+                                    placeholder="Confirme sua senha" />
+                            </div>
+
+                            <button type="submit" class="btn-default">Cadastrar</button>
+                        </form>
+                        <a href="/login" class="link-login">Já tenho uma conta</a>
+        </section>
+
+        <%- include("./includes/footer") %>

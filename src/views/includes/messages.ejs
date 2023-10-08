@@ -1,0 +1,20 @@
+<% if(erros.length> 0) { %>
+    <div class="erro">
+        <% for(let erro of erros) { %>
+            <p>
+                - <%= erro %>
+            </p>
+            <% } %>
+    </div>
+
+    <% } %>
+
+        <% if(sucesso.length> 0) { %>
+
+            <div class="sucesso">
+                <p>
+                    <%= sucesso %>
+                </p>
+            </div>
+
+            <% } %>
