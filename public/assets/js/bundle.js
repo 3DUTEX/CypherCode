@@ -21186,7 +21186,40 @@ body {
 .section {
     width: 100%;
     height: 100vh;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/gerais.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;AACd;;AAEA;IACI,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,aAAa;AACjB","sourcesContent":["* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nbody {\r\n    scroll-behavior: smooth;\r\n}\r\n\r\n.section {\r\n    width: 100%;\r\n    height: 100vh;\r\n}"],"sourceRoot":""}]);
+}
+
+.input-default {
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    color: rgb(155, 149, 201);
+    background: #494949;
+    border-radius: 5px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-default:focus {
+    box-shadow: 0 0 0 5px rgba(199, 196, 226, 0.7);
+    outline: 1px solid rgb(141, 137, 180);
+}
+
+.btn-default {
+    width: 100%;
+    padding: 15px 0;
+    margin: 20px 0;
+    background: rgb(155, 149, 201);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-default:hover {
+    cursor: pointer;
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/gerais.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;AACd;;AAEA;IACI,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,aAAa;AACjB;;AAEA;IACI,eAAe;IACf,uBAAuB;IACvB,aAAa;IACb,yBAAyB;IACzB,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,uCAAuC;AAC3C;;AAEA;IACI,8CAA8C;IAC9C,qCAAqC;AACzC;;AAEA;IACI,WAAW;IACX,eAAe;IACf,cAAc;IACd,8BAA8B;IAC9B,WAAW;IACX,eAAe;IACf,iBAAiB;IACjB,kBAAkB;IAClB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,eAAe;AACnB","sourcesContent":["* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nbody {\r\n    scroll-behavior: smooth;\r\n}\r\n\r\n.section {\r\n    width: 100%;\r\n    height: 100vh;\r\n}\r\n\r\n.input-default {\r\n    font-size: 25px;\r\n    font-family: sans-serif;\r\n    padding: 10px;\r\n    color: rgb(155, 149, 201);\r\n    background: #494949;\r\n    border-radius: 5px;\r\n    border: none;\r\n    transition: box-shadow 0.3s ease-in-out;\r\n}\r\n\r\n.input-default:focus {\r\n    box-shadow: 0 0 0 5px rgba(199, 196, 226, 0.7);\r\n    outline: 1px solid rgb(141, 137, 180);\r\n}\r\n\r\n.btn-default {\r\n    width: 100%;\r\n    padding: 15px 0;\r\n    margin: 20px 0;\r\n    background: rgb(155, 149, 201);\r\n    color: #fff;\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    border-radius: 5px;\r\n    border: none;\r\n    transition: 0.3s;\r\n}\r\n\r\n.btn-default:hover {\r\n    cursor: pointer;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21398,38 +21431,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login {
     margin: 10px 0;
 }
 
-.input-default {
-    font-size: 25px;
-    padding: 10px;
-    color: rgb(155, 149, 201);
-    background: #494949;
-    border-radius: 5px;
-    border: none;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.input-default:focus {
-    box-shadow: 0 0 0 5px rgba(199, 196, 226, 0.7);
-    outline: 1px solid rgb(141, 137, 180);
-}
-
-.btn-default {
-    width: 100%;
-    padding: 15px 0;
-    margin: 20px 0;
-    background: rgb(155, 149, 201);
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    transition: 0.3s;
-}
-
-.btn-default:hover {
-    cursor: pointer;
-}
-
 .link-login {
     color: rgb(155, 149, 201);
     font-size: 20px;
@@ -21449,7 +21450,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/login.css"],"names":[],"mappings":"AAAA;IACI,0BAA0B;IAC1B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,sBAAsB;IACtB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,yBAAyB;IACzB,uBAAuB;IACvB,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,yBAAyB;IACzB,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,uCAAuC;AAC3C;;AAEA;IACI,8CAA8C;IAC9C,qCAAqC;AACzC;;AAEA;IACI,WAAW;IACX,eAAe;IACf,cAAc;IACd,8BAA8B;IAC9B,WAAW;IACX,eAAe;IACf,iBAAiB;IACjB,kBAAkB;IAClB,YAAY;IACZ,gBAAgB;AACpB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,yBAAyB;IACzB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,0BAA0B;IAC1B,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;AACvB","sourcesContent":[".login {\r\n    height: calc(100vh - 70px);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: #191919;\r\n}\r\n\r\n.form-login {\r\n    max-width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n    gap: 10px 0;\r\n}\r\n\r\n.form-group {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.form-group label {\r\n    color: rgb(155, 149, 201);\r\n    font-family: sans-serif;\r\n    font-size: 25px;\r\n    margin: 10px 0;\r\n}\r\n\r\n.input-default {\r\n    font-size: 25px;\r\n    padding: 10px;\r\n    color: rgb(155, 149, 201);\r\n    background: #494949;\r\n    border-radius: 5px;\r\n    border: none;\r\n    transition: box-shadow 0.3s ease-in-out;\r\n}\r\n\r\n.input-default:focus {\r\n    box-shadow: 0 0 0 5px rgba(199, 196, 226, 0.7);\r\n    outline: 1px solid rgb(141, 137, 180);\r\n}\r\n\r\n.btn-default {\r\n    width: 100%;\r\n    padding: 15px 0;\r\n    margin: 20px 0;\r\n    background: rgb(155, 149, 201);\r\n    color: #fff;\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    border-radius: 5px;\r\n    border: none;\r\n    transition: 0.3s;\r\n}\r\n\r\n.btn-default:hover {\r\n    cursor: pointer;\r\n}\r\n\r\n.link-login {\r\n    color: rgb(155, 149, 201);\r\n    font-size: 20px;\r\n}\r\n\r\n.cadastrar {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: calc(100vh - 70px);\r\n    background: #191919;\r\n}\r\n\r\n.form-cadastrar {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/login.css"],"names":[],"mappings":"AAAA;IACI,0BAA0B;IAC1B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,sBAAsB;IACtB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,yBAAyB;IACzB,uBAAuB;IACvB,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,yBAAyB;IACzB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,0BAA0B;IAC1B,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;AACvB","sourcesContent":[".login {\r\n    height: calc(100vh - 70px);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: #191919;\r\n}\r\n\r\n.form-login {\r\n    max-width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    flex-direction: column;\r\n    gap: 10px 0;\r\n}\r\n\r\n.form-group {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.form-group label {\r\n    color: rgb(155, 149, 201);\r\n    font-family: sans-serif;\r\n    font-size: 25px;\r\n    margin: 10px 0;\r\n}\r\n\r\n.link-login {\r\n    color: rgb(155, 149, 201);\r\n    font-size: 20px;\r\n}\r\n\r\n.cadastrar {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: calc(100vh - 70px);\r\n    background: #191919;\r\n}\r\n\r\n.form-cadastrar {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21478,17 +21479,20 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.erro {
     background: rgb(205, 25, 61);
+    min-width: 300px;
     border: 3px solid rgb(158, 19, 47);
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
+    line-height: 2;
 }
 
 .sucesso {
     background: rgb(155, 149, 201);
+    min-width: 300px;
     border: 3px solid rgb(116, 111, 152);
     color: #fff;
     font-family: sans-serif;
@@ -21496,7 +21500,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.erro {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/messages.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;IAC5B,kCAAkC;IAClC,mBAAmB;IACnB,uBAAuB;IACvB,eAAe;IACf,aAAa;IACb,mBAAmB;IACnB,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;IAC9B,oCAAoC;IACpC,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,aAAa;IACb,mBAAmB;IACnB,mBAAmB;AACvB","sourcesContent":[".erro {\r\n    background: rgb(205, 25, 61);\r\n    border: 3px solid rgb(158, 19, 47);\r\n    color: rgb(0, 0, 0);\r\n    font-family: sans-serif;\r\n    font-size: 25px;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.sucesso {\r\n    background: rgb(155, 149, 201);\r\n    border: 3px solid rgb(116, 111, 152);\r\n    color: #fff;\r\n    font-family: sans-serif;\r\n    font-size: 25px;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin-bottom: 30px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/messages.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;IAC5B,gBAAgB;IAChB,kCAAkC;IAClC,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,cAAc;AAClB;;AAEA;IACI,8BAA8B;IAC9B,gBAAgB;IAChB,oCAAoC;IACpC,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,aAAa;IACb,mBAAmB;IACnB,mBAAmB;AACvB","sourcesContent":[".erro {\r\n    background: rgb(205, 25, 61);\r\n    min-width: 300px;\r\n    border: 3px solid rgb(158, 19, 47);\r\n    color: #fff;\r\n    font-family: sans-serif;\r\n    font-size: 18px;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin-bottom: 30px;\r\n    line-height: 2;\r\n}\r\n\r\n.sucesso {\r\n    background: rgb(155, 149, 201);\r\n    min-width: 300px;\r\n    border: 3px solid rgb(116, 111, 152);\r\n    color: #fff;\r\n    font-family: sans-serif;\r\n    font-size: 25px;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin-bottom: 30px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21658,6 +21662,49 @@ ___CSS_LOADER_EXPORT___.push([module.id, `a {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/modules/pedido.css":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/modules/pedido.css ***!
+  \**************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.section-pedido{
+    height: calc(100vh - 70px);
+    background: #191919;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-pedido{
+    width: 80%;
+}
+
+.textarea{
+    resize: none;
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/pedido.css"],"names":[],"mappings":"AAAA;IACI,0BAA0B;IAC1B,mBAAmB;;IAEnB,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,UAAU;AACd;;AAEA;IACI,YAAY;AAChB","sourcesContent":[".section-pedido{\r\n    height: calc(100vh - 70px);\r\n    background: #191919;\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.form-pedido{\r\n    width: 80%;\r\n}\r\n\r\n.textarea{\r\n    resize: none;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/styles.css":
 /*!******************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/styles.css ***!
@@ -21678,7 +21725,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_modules_navbar_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./modules/navbar.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/modules/navbar.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_modules_home_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./modules/home.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/modules/home.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_modules_login_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./modules/login.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/modules/login.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_modules_pedido_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./modules/pedido.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/modules/pedido.css");
 // Imports
+
 
 
 
@@ -21692,6 +21741,7 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_modules_messages_
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_modules_navbar_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_modules_home_css__WEBPACK_IMPORTED_MODULE_5__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_modules_login_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_modules_pedido_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports

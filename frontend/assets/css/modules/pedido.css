@@ -1,0 +1,17 @@
+.section-pedido{
+    height: calc(100vh - 70px);
+    background: #191919;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-pedido{
+    width: 80%;
+}
+
+.textarea{
+    resize: none;
+}

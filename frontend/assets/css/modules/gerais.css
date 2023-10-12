@@ -11,3 +11,36 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+.input-default {
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    color: rgb(155, 149, 201);
+    background: #494949;
+    border-radius: 5px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-default:focus {
+    box-shadow: 0 0 0 5px rgba(199, 196, 226, 0.7);
+    outline: 1px solid rgb(141, 137, 180);
+}
+
+.btn-default {
+    width: 100%;
+    padding: 15px 0;
+    margin: 20px 0;
+    background: rgb(155, 149, 201);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-default:hover {
+    cursor: pointer;
+}

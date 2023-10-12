@@ -1,11 +1,29 @@
-const Cadastrar = require("../models/CadastrarModel");
+const Login = require("../models/LoginModel");
+const Email = require("../models/EmailModel");
+
 
 exports.index = (req, res) => {
     res.render("login");
 }
 
-exports.loginPOST = (req, res) => {
-    res.send(req.body);
+exports.loginPOST = async(req, res) => {
+    try{
+        const login = new Login(req.body);
+        await login.logarDB();
+        if(login.erros.length > 0){
+            req.flash("erros", login.erros);
+            req.session.save(() => {
+                res.redirect("/login");
+            });
+            return;
+        }
+
+        req.session.usuario = login.user;
+        res.redirect("/");
+    }catch(err){
+        console.log(err);
+        res.render("404");
+    }
 }
 
 exports.cadastrar = (req, res) => {
@@ -13,18 +31,32 @@ exports.cadastrar = (req, res) => {
 }
 
 exports.cadastrarPOST = async (req, res) => {
-    const cadastrar = new Cadastrar(req.body);
-    await cadastrar.registraDB();
-    if (cadastrar.erros.length > 0) {
-        req.flash("erros", cadastrar.erros);
+    const login = new Login(req.body);
+    try{
+        await login.registraDB();
+        if (login.erros.length > 0) {
+            req.flash("erros", login.erros);
+            req.session.save(() => {
+                res.redirect("/login/cadastrar");
+            })
+            return;
+        }
+    
+        const email = new Email();
+        await email.emailCadastrado(req.body.email, req.body.usuario);
+        req.flash("sucesso", "Usuário cadastrado com sucesso.");
         req.session.save(() => {
-            res.redirect("/login/cadastrar");
+            res.redirect("/login");
         })
-        return;
+
+    }catch(err){
+        console.log(err);
+        res.render("404");
     }
 
-    req.flash("sucesso", "Usuário cadastrado com sucesso.");
-    req.session.save(() => {
-        res.redirect("/login");
-    })
+};
+
+exports.logout = (req, res) => {
+    req.session.destroy();
+    res.redirect("/");
 }
