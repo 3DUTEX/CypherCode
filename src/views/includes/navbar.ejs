@@ -4,12 +4,13 @@
         <button class="hamburger"></button>
         <ul class="nav-list">
             <% if(!usuario) { %>
-            <li><a href="/login">Login</a></li>
-            <% } %>
-            <% if(usuario) { %>
-                <li><a href="/pedido">Fazer Pedido</a></li>
-                <li><a href="/login/logout">Sair</a></li>
-            <% } %>
+                <li><a href="/login">Login</a></li>
+                <% } %>
+                    <% if(usuario) { %>
+                        <li><a href="/perfil">Meu Perfil</a></li>
+                        <li><a href="/perfil/pedido">Fazer Pedido</a></li>
+                        <li><a href="/login/logout">Sair</a></li>
+                        <% } %>
         </ul>
     </nav>
 </header>

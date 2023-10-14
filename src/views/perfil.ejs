@@ -1,0 +1,45 @@
+<%- include("./includes/head") %>
+
+    <%- include("./includes/navbar") %>
+
+        <section class="section section-perfil">
+            <h1>Meu Perfil</h1>
+            <% if(sucesso.length> 0 || erros.length > 0) { %>
+                <%- include("./includes/messages") %>
+                    <% } %>
+                        <div class="perfil-dados">
+                            <h2>
+                                @<%= usuario.usuario %>
+                            </h2>
+                            <h4>Email: <%= usuario.email %>
+                            </h4>
+                        </div>
+                        <div class="container-pedidos">
+                            <h2>Meus Pedidos</h2>
+
+                            <div class="pedidos">
+                                <% if(pedidos.length> 0) { %>
+                                    <% for(pedido of pedidos) { %>
+                                        <div class="pedido">
+                                            <div class="pedidoAtributo">
+                                                <p>Nome do Projeto: </p>
+                                                <h3>
+                                                    <%= pedido.nomeProjeto %>
+                                                </h3>
+                                            </div>
+
+                                            <div class="pedidoAtributo">
+                                                <p>Data de conclusão: </p>
+                                                <h4>
+                                                    <%= pedido.dataConclusao %>
+                                                </h4>
+                                            </div>
+
+                                        </div>
+                                        <% } %>
+                                            <% } %>
+                            </div>
+                        </div>
+        </section>
+
+        <%- include("./includes/footer") %>

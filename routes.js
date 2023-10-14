@@ -2,8 +2,8 @@ const express = require("express");
 const route = express.Router();
 const homeController = require("./src/controllers/homeController");
 const loginController = require("./src/controllers/loginController");
-const pedidoController = require("./src/controllers/pedidoController");
-const {naoLogado, loginNecessario} = require("./src/middlewares/middleware");
+const perfilController = require("./src/controllers/perfilController");
+const { naoLogado, loginNecessario } = require("./src/middlewares/middleware");
 
 //rotas Home
 route.get("/", homeController.index);
@@ -15,8 +15,10 @@ route.get("/login/cadastrar", naoLogado, loginController.cadastrar);
 route.post("/login/cadastrar", naoLogado, loginController.cadastrarPOST);
 route.get("/login/logout", loginNecessario, loginController.logout);
 
-//rotas pedido
-route.get("/pedido", loginNecessario, pedidoController.index);
-route.post("/pedido", loginNecessario, pedidoController.indexPost);
+//rotas perfil
+route.get("/perfil", loginNecessario, perfilController.perfil);
+route.get("/perfil/pedido", loginNecessario, perfilController.index);
+route.post("/perfil/pedido", loginNecessario, perfilController.indexPost);
+
 
 module.exports = route;

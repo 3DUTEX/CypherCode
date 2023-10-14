@@ -19,13 +19,13 @@ body {
     color: rgb(155, 149, 201);
     background: #494949;
     border-radius: 5px;
-    border: none;
-    transition: box-shadow 0.3s ease-in-out;
+    border: 1px solid rgb(141, 137, 180);
+    transition: 0.3s ease;
 }
 
 .input-default:focus {
+    outline: none;
     box-shadow: 0 0 0 5px rgba(199, 196, 226, 0.7);
-    outline: 1px solid rgb(141, 137, 180);
 }
 
 .btn-default {
