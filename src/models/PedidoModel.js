@@ -68,6 +68,21 @@ class Pedido {
         const pedidos = await PedidoModel.find({ criadoPor: id });
         return pedidos;
     }
+
+    static async validaPedidoUsuario(id, usuario) {
+        const pedido = await PedidoModel.findById(id);
+        if (!pedido) throw Error("Pedido não encontrado.");
+        if (usuario._id !== pedido.criadoPor) throw Error("Acesso negado");
+
+        return pedido;
+    }
+
+    async editarPedido(id) {
+        this.valida();
+        if (this.erros.length > 0) return;
+        this.formataBody();
+        await PedidoModel.findByIdAndUpdate(id, this.body, { new: true });
+    };
 }
 
 module.exports = Pedido;

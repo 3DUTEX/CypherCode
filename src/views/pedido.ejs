@@ -6,31 +6,37 @@
             <% if(sucesso.length> 0 || erros.length > 0) { %>
                 <%- include("./includes/messages") %>
                     <% } %>
-                        <form action="/perfil/pedido" method="POST" class="form-pedido">
-                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                            <div class="form-group">
-                                <label>Nome do projeto: </label>
-                                <input type="text" name="nomeProjeto" class="input-default"
-                                    placeholder="Insira o nome do projeto" />
-                            </div>
-                            <div class="form-group">
-                                <label>Telefone para contato: </label>
-                                <input type="tel" name="telefone" class="input-default"
-                                    placeholder="Insira um telefone para contato" />
-                            </div>
-                            <div class="form-group">
-                                <label>Descrição: </label>
-                                <textarea name="descricao" class="input-default textarea"
-                                    placeholder="Insira a descrição do projeto (max: 300 caracteres)"
-                                    maxlength="300"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>Data de conclusão: </label>
-                                <input type="date" name="dataConclusao" class="input-default inpt-date">
-                            </div>
+                        <% if(pedido.nomeProjeto) { %>
+                            <form action="/perfil/editarPedido/<%= pedido._id %>" method="POST" class="form-pedido">
+                                <% }else { %>
+                                    <form action="/perfil/pedido" method="POST" class="form-pedido">
+                                        <% } %>
+                                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                            <div class="form-group">
+                                                <label>Nome do projeto: </label>
+                                                <input type="text" name="nomeProjeto" value="<%= pedido.nomeProjeto %>"
+                                                    class="input-default" placeholder="Insira o nome do projeto" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Telefone para contato: </label>
+                                                <input type="tel" name="telefone" value="<%= pedido.telefone %>"
+                                                    class="input-default"
+                                                    placeholder="Insira um telefone para contato" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Descrição: </label>
+                                                <textarea name="descricao" class="input-default textarea"
+                                                    placeholder="Insira a descrição do projeto (max: 300 caracteres)"
+                                                    maxlength="300"><%= pedido.descricao %></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Data de conclusão: </label>
+                                                <input type="date" name="dataConclusao"
+                                                    value="<%= pedido.dataConclusao %>" class="input-default inpt-date">
+                                            </div>
 
-                            <button type="submit" class="btn-default">Fazer o pedido</button>
-                        </form>
+                                            <button type="submit" class="btn-default">Fazer o pedido</button>
+                                    </form>
         </section>
 
         <%- include("./includes/footer") %>

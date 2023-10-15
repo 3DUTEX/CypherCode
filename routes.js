@@ -19,6 +19,8 @@ route.get("/login/logout", loginNecessario, loginController.logout);
 route.get("/perfil", loginNecessario, perfilController.perfil);
 route.get("/perfil/pedido", loginNecessario, perfilController.index);
 route.post("/perfil/pedido", loginNecessario, perfilController.indexPost);
+route.get("/perfil/editarPedido/:id", loginNecessario, perfilController.editPed);
+route.post("/perfil/editarPedido/:id", loginNecessario, perfilController.editPedPOST);
 
 
 module.exports = route;

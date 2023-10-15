@@ -21731,7 +21731,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.section-perfil {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     background: #191919;
     color: rgb(155, 149, 201);
     font-family: Consolas;
@@ -21744,7 +21744,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.section-perfil {
 
 .section-perfil h1 {
     font-size: 60px;
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 
@@ -21781,6 +21781,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.section-perfil {
 .pedido {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     font-size: 25px;
     background: #191919;
@@ -21793,7 +21794,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.section-perfil {
 .pedidoAtributo {
     display: flex;
     flex-direction: column;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/perfil.css"],"names":[],"mappings":"AAAA;IACI,0BAA0B;IAC1B,mBAAmB;IACnB,yBAAyB;IACzB,qBAAqB;;IAErB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,WAAW;AACf;;AAEA;IACI,eAAe;IACf,eAAe;AACnB;;;AAGA;IACI,eAAe;AACnB;;;AAGA;IACI,sBAAsB;IACtB,UAAU;IACV,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;AACpB;;;AAGA;IACI,eAAe;IACf,aAAa;AACjB;;;AAGA;IACI,WAAW;IACX,YAAY;IACZ,gBAAgB;;IAEhB,aAAa;IACb,sBAAsB;IACtB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,8BAA8B;;IAE9B,eAAe;IACf,mBAAmB;IACnB,aAAa;IACb,cAAc;IACd,oCAAoC;IACpC,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B","sourcesContent":[".section-perfil {\r\n    height: calc(100vh - 70px);\r\n    background: #191919;\r\n    color: rgb(155, 149, 201);\r\n    font-family: Consolas;\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 30px 0;\r\n}\r\n\r\n.section-perfil h1 {\r\n    font-size: 60px;\r\n    padding: 30px 0;\r\n}\r\n\r\n\r\n.perfil-dados {\r\n    font-size: 25px;\r\n}\r\n\r\n\r\n.container-pedidos {\r\n    box-sizing: border-box;\r\n    width: 90%;\r\n    height: 60vh;\r\n    border-radius: 10px;\r\n    background: #222;\r\n}\r\n\r\n\r\n.container-pedidos h2 {\r\n    font-size: 30px;\r\n    padding: 20px;\r\n}\r\n\r\n\r\n.pedidos {\r\n    width: 100%;\r\n    height: 50vh;\r\n    overflow-x: auto;\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 15px 0;\r\n}\r\n\r\n.pedido {\r\n    display: flex;\r\n    justify-content: space-between;\r\n\r\n    font-size: 25px;\r\n    background: #191919;\r\n    padding: 15px;\r\n    margin: 0 20px;\r\n    border: 2px solid rgb(155, 149, 201);\r\n    border-radius: 15px;\r\n}\r\n\r\n.pedidoAtributo {\r\n    display: flex;\r\n    flex-direction: column;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/modules/perfil.css"],"names":[],"mappings":"AAAA;IACI,8BAA8B;IAC9B,mBAAmB;IACnB,yBAAyB;IACzB,qBAAqB;;IAErB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,WAAW;AACf;;AAEA;IACI,eAAe;IACf,iBAAiB;AACrB;;;AAGA;IACI,eAAe;AACnB;;;AAGA;IACI,sBAAsB;IACtB,UAAU;IACV,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;AACpB;;;AAGA;IACI,eAAe;IACf,aAAa;AACjB;;;AAGA;IACI,WAAW;IACX,YAAY;IACZ,gBAAgB;;IAEhB,aAAa;IACb,sBAAsB;IACtB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;;IAEnB,eAAe;IACf,mBAAmB;IACnB,aAAa;IACb,cAAc;IACd,oCAAoC;IACpC,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B","sourcesContent":[".section-perfil {\r\n    min-height: calc(100vh - 70px);\r\n    background: #191919;\r\n    color: rgb(155, 149, 201);\r\n    font-family: Consolas;\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 30px 0;\r\n}\r\n\r\n.section-perfil h1 {\r\n    font-size: 60px;\r\n    padding-top: 30px;\r\n}\r\n\r\n\r\n.perfil-dados {\r\n    font-size: 25px;\r\n}\r\n\r\n\r\n.container-pedidos {\r\n    box-sizing: border-box;\r\n    width: 90%;\r\n    height: 60vh;\r\n    border-radius: 10px;\r\n    background: #222;\r\n}\r\n\r\n\r\n.container-pedidos h2 {\r\n    font-size: 30px;\r\n    padding: 20px;\r\n}\r\n\r\n\r\n.pedidos {\r\n    width: 100%;\r\n    height: 50vh;\r\n    overflow-x: auto;\r\n\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 15px 0;\r\n}\r\n\r\n.pedido {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n\r\n    font-size: 25px;\r\n    background: #191919;\r\n    padding: 15px;\r\n    margin: 0 20px;\r\n    border: 2px solid rgb(155, 149, 201);\r\n    border-radius: 15px;\r\n}\r\n\r\n.pedidoAtributo {\r\n    display: flex;\r\n    flex-direction: column;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

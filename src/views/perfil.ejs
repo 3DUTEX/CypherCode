@@ -2,7 +2,7 @@
 
     <%- include("./includes/navbar") %>
 
-        <section class="section section-perfil">
+        <section class="section-perfil">
             <h1>Meu Perfil</h1>
             <% if(sucesso.length> 0 || erros.length > 0) { %>
                 <%- include("./includes/messages") %>
@@ -29,10 +29,7 @@
                                             </div>
 
                                             <div class="pedidoAtributo">
-                                                <p>Data de conclusão: </p>
-                                                <h4>
-                                                    <%= pedido.dataConclusao %>
-                                                </h4>
+                                                <a href="/perfil/editarPedido/<%= pedido._id %>">Editar</a>
                                             </div>
 
                                         </div>
